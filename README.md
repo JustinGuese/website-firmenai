@@ -1,0 +1,3 @@
+staticjinja watch
+
+staticjinja build
