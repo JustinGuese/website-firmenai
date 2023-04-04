@@ -1,3 +1,3 @@
 staticjinja watch
 
-staticjinja build
+staticjinja build --outpath=./docs
