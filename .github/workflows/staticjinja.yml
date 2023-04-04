@@ -32,8 +32,15 @@ jobs:
       - name: Staticjinja Build
         run: staticjinja build --outpath=./docs
 
+  deploy:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    concurrency:
+      group: ${{ github.workflow }}-${{ github.ref }}
+    steps:
       # Deployment job
-      - name: Deploy
+      - name: Deploy to gh pages
         uses: peaceiris/actions-gh-pages@v3
         if: ${{ github.ref == 'refs/heads/master' }}
         with:
