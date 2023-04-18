@@ -23,6 +23,7 @@ spec:
   - hosts:
     # - firmenai.datafortress.cloud
     - firmenai.de
+    - app.firmenai.de
     secretName: tls-secret
   rules:
   - host: firmenai.de # firmenai.datafortress.cloud
@@ -35,3 +36,13 @@ spec:
             name: firmenai-website-service
             port:
               number: 8080
+  - host: app.firmenai.de # firmenai.datafortress.cloud
+    http:
+      paths:
+      - path: /
+        pathType: Prefix
+        backend:
+          service:
+            name: firmenai-backend
+            port:
+              number: 8000

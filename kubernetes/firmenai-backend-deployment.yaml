@@ -1,0 +1,54 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  labels:
+    app: firmenai-backend
+  name: firmenai-backend
+  namespace: firmenai
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: firmenai-backend
+  template:
+    metadata:
+      labels:
+        app: firmenai-backend
+    spec:
+      containers:
+        - env:
+            - name: MONGO_URL
+              value: mongodb://mongodb-service.dbstaging.svc.cluster.local:27017/
+            - name: OPENAI_API_KEY
+              valueFrom:
+                secretKeyRef:
+                  key: OPENAI_API_KEY
+                  name: openaikey
+          image: guestros/firmenai-backend:latest
+          name: firmenai-backend
+          ports:
+            - containerPort: 8000
+          resources:
+            requests:
+              memory: "10Mi"
+              cpu: "25m"
+            limits:
+              memory: "1Gi"
+              cpu: "1"
+      restartPolicy: Always
+---
+apiVersion: v1
+kind: Service
+metadata:
+  labels:
+    app: firmenai-backend
+  name: firmenai-backend
+  namespace: firmenai
+spec:
+  type: ClusterIP
+  ports:
+    - name: "8000"
+      port: 8000
+      targetPort: 8000
+  selector:
+    app: firmenai-backend
