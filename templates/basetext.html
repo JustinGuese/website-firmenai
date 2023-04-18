@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+{% from 'subprodmacro.html' import subproduct %}
+{% block content %}
+{{ subproduct("BaseText", "Generate text similar to chatgpt with enhanced security",
+"Enhanced security with Firmenai.de hosted model", "Generate text with the Firmenai.de hosted model that provides increased security by ensuring that no data leaves the company's knowledgebase, without compromising on accuracy.",
+"Accurate text generation", "Generate accurate text that can be used for various purposes such as blog posts, social media posts, or any other content.",
+"No leakage of information overseas or in the model training data of openai", "Ensure that no data leaks overseas or in the model training data of OpenAI, by using the Firmenai.de hosted model.",
+"Revolutionize your text generation", "Revolutionize your text generation with BaseText - the secure and accurate text generator that provides enhanced security with the Firmenai.de hosted model. Generate accurate text for your content needs without compromising on security. It is perfect for businesses with increased security requirements that still require accurate text generation."
+) }}
+{% include "pricing.html" %}
+{% endblock %}

@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+{% from 'subprodmacro.html' import subproduct %}
+{% block content %}
+{{ subproduct("BaseImage", "Generate images for various purposes with ease",
+"Versatile image generation", "Generate images that can be used for various purposes such as blog posts, social media, or even for icons and slides.",
+"Easy image generation", "Generate images with ease using BaseImage, without the need for a graphic designer.",
+"Customizable images", "Customize your images with a range of options such as size, color, and shape to ensure that they are tailored to your needs.",
+"Revolutionize your image generation", "Revolutionize your image generation with BaseImage - the easy-to-use image generator that helps you create stunning visuals for your content needs. It is perfect for businesses looking to enhance their content with high-quality images without the need for a graphic designer."
+) }}
+{% include "pricing.html" %}
+{% endblock %}
