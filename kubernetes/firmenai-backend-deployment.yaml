@@ -19,6 +19,8 @@ spec:
         - env:
             - name: MONGO_URL
               value: mongodb://mongodb-service.dbstaging.svc.cluster.local:27017/
+            - name: AUTH_CALLBACK_URL
+              value: https://app.firmenai.de/auth-callback
             - name: OPENAI_API_KEY
               valueFrom:
                 secretKeyRef:
