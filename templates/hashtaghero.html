@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+{% from 'subprodmacro.html' import subproduct %}
+{% block content %}
+{{ subproduct("HashtagHero", "Elevate your social media game with AI-powered content ideas and stunning visuals",
+"Content ideation made easy", "Generate customizable content ideas for your social media and ad campaigns, and stand out in a crowded online space.",
+"Customizable tone and emotion", "Tailor your content to your audience with customizable tone and emotion, and increase engagement on your social media platforms.",
+"Hashtag optimization", "Find the right hashtags for each post and ensure that your content reaches the right audience, increasing engagement and visibility.",
+"Stunning visual generator", "Create eye-catching visuals that complement your content and grab the attention of your audience, without the need for a graphic designer.",
+"Elevate your social media game", "Revolutionize your social media and advertising efforts with HashtagHero - the AI-powered tool that streamlines the content ideation process and helps you stand out in a crowded online space. With customizable content ideas, tone, emotion, and hashtags, as well as a stunning visual generator, HashtagHero saves time and effort for businesses looking to maximize their social media and advertising game. It is perfect for social media managers, business owners, and anyone looking to simplify their social media content creation process."
+) }}
+{% include "pricing.html" %}
+{% endblock %}

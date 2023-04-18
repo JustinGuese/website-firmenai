@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+{% from 'subprodmacro.html' import subproduct %}
+{% block content %}
+{{ subproduct("BrainSync", "Simplify your note-taking and stay organized with AI-powered documentation",
+"Streamlined note-taking", "Take notes and keep them organized, no matter how many projects or topics you're juggling.",
+"Customizable long-form documentation", "Generate long-form documentation from your notes, complete with summaries and links to related projects, saving you time and effort.",
+"Project separation and organization", "Separate your notes by project or topic, making it easier to stay focused and organized, and streamline your workflow.",
+"AI-powered personal assistant", "Our chatbot remembers details from other notes and projects, and provides instant answers to your technical questions, making it your personal assistant.",
+"Revolutionize your note-taking", "Revolutionize your note-taking with BrainSync - the AI-powered chatbot that simplifies your documentation, separates your notes by project or topic, and remembers details from other notes and projects. With customizable long-form documentation, a streamlined note-taking process, and an AI-powered personal assistant, BrainSync saves you time and effort, and helps you stay organized and productive. It is perfect for developers looking to implement new features, team members seeking information about company values and structure, and anyone looking to simplify their note-taking process."
+) }}
+{% include "pricing.html" %}
+{% endblock %}

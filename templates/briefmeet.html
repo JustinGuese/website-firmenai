@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+{% from 'subprodmacro.html' import subproduct %}
+{% block content %}
+{{ subproduct("BriefMeet", "Maximize productivity and stay focused with AI-powered meeting summaries and action items",
+"Concise meeting summaries", "Turn meeting transcripts into concise summaries that highlight the most important points and action items, and stay focused and productive.",
+"Actionable next steps", "Generate actionable next steps from your meeting transcripts, and streamline your workflow by knowing what needs to be done after each meeting.",
+"Customizable to-dos", "Customize your to-dos with priority levels and deadlines, and stay on top of your tasks.",
+"AI-powered meeting assistant", "BriefMeet acts as your AI-powered meeting assistant, simplifying your meeting note-taking process and providing clarity on action items.",
+"Revolutionize your meetings", "Revolutionize your meeting process with BriefMeet - the AI-powered tool that turns your meeting transcripts into concise summaries and actionable to-dos. With customizable to-dos, actionable next steps, and an AI-powered meeting assistant, BriefMeet saves you time and effort, and helps you stay focused and productive. It is perfect for businesses looking to streamline their meeting process, stay organized, and drive success."
+) }}
+{% include "pricing.html" %}
+{% endblock %}
