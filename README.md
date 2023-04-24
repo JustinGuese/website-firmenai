@@ -10,3 +10,5 @@ Single service plan: https://buy.stripe.com/3csdUq5SRceU00w001; yearly: https://
 Customer portal: https://billing.stripe.com/p/login/8wMfZnbAnchm31SeUU
 
 Thank you for your subscription. A representative of Firmenai.de will contact you shortly for your onboarding!
+
+second customer protal links: https://billing.stripe.com/p/login/8wMfZnbAnchm31SeUU
