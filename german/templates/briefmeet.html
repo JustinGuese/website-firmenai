@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+{% from 'subprodmacro.html' import subproduct %}
+{% block content %}
+{{ subproduct("BriefMeet", "Maximieren Sie Ihre Produktivität und bleiben Sie fokussiert mit KI-gesteuerten Meeting-Zusammenfassungen und Aktionspunkten",
+"Concise meeting summaries", "Turn meeting transcripts into concise summaries that highlight the most important points and action items, and stay focused and productive",
+"Umsetzbare nächste Schritte", "Generieren Sie umsetzbare nächste Schritte aus Ihren Besprechungsprotokollen und rationalisieren Sie Ihren Arbeitsablauf, indem Sie wissen, was nach jeder Besprechung zu tun ist.",
+"Anpassbare Aufgaben", "Passen Sie Ihre Aufgaben mit Prioritätsstufen und Fristen an und behalten Sie den Überblick über Ihre Aufgaben",
+"KI-gesteuerter Meeting-Assistent", "BriefMeet fungiert als Ihr KI-gesteuerter Meeting-Assistent, der die Aufzeichnung von Meeting-Notizen vereinfacht und Klarheit über Aktionspunkte schafft.",
+"Revolutionieren Sie Ihre Besprechungen", "Revolutionieren Sie Ihren Besprechungsprozess mit BriefMeet - dem KI-gesteuerten Tool, das Ihre Besprechungsprotokolle in prägnante Zusammenfassungen und umsetzbare Aufgaben verwandelt. Mit anpassbaren Aufgaben, umsetzbaren nächsten Schritten und einem KI-gesteuerten Meeting-Assistenten spart BriefMeet Zeit und Mühe und hilft Ihnen, konzentriert und produktiv zu bleiben. Es ist perfekt für Unternehmen, die ihre Besprechungsprozesse rationalisieren, organisiert bleiben und den Erfolg steigern wollen."
+) }}
+{% include "pricing.html" %}
+{% endblock %}

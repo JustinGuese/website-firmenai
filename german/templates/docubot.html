@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+{% from 'subprodmacro.html' import subproduct %}
+{% block content %}
+    {{ subproduct("DocuBot", "Erschließen Sie die Produktivität und rationalisieren Sie Ihren Arbeitsablauf mit einer interaktiven Dokumentation", 
+    "24/7-Support", "Verabschieden Sie sich von der Frustration der manuellen Suche und begrüßen Sie direkte Antworten in Echtzeit. Steigern Sie die Effizienz und entlasten Sie Ihr Support-Team",
+    "Schnelle Plausibilitätsprüfungen", "Unser KI-gesteuerter Chatbot bietet sofortigen Zugriff auf die Dokumentation und kann die Plausibilität von Anwendungsfällen überprüfen, wodurch Sie Zeit und Mühe sparen.",
+    "Produktivitätssteigerung", "Unser KI-gesteuerter Chatbot rationalisiert die Dokumentation, liefert direkte Antworten auf Fragen und spart Zeit für Kunden und Mitarbeiter.",
+    "Eine Dokumentation, die lebt", "Unser KI-gesteuerter Chatbot identifiziert aktiv fehlende Abschnitte, mögliche Konflikte und unklare Bereiche und stellt so sicher, dass Ihre Dokumentation immer aktuell und genau ist.",
+    "Eine Dokumentation, die lebt", "Revolutionieren Sie Ihre Dokumentation mit DocuBot - dem KI-gesteuerten Chatbot, der Ihre Arbeitsweise rationalisiert. Von der schnellen Plausibilitätsprüfung bis hin zur lebendigen Dokumentation vereinfacht DocuBot Ihre Arbeitsabläufe und verbessert Ihre Effizienz.DocuBot ist ein KI-gesteuerter Chatbot, der die Art und Weise, wie Unternehmen an Dokumentation herangehen, revolutioniert. Er bietet rund um die Uhr Zugang zu interaktiver Dokumentation, prüft die Plausibilität von Anwendungsfällen, schlägt fehlende Segmente vor und identifiziert unklare Bereiche. Mit DocuBot können Unternehmen die Effizienz und Genauigkeit ihrer Dokumentation verbessern, ihre Arbeitsabläufe vereinfachen und ihren Mitarbeitern Zeit und Mühe ersparen. DocuBot eignet sich perfekt für Entwickler, die nach technischen Informationen suchen, für Teamleiter, die auf der Suche nach Dokumentation für ein bestimmtes Projekt sind, und für jeden, der schnellen Zugriff auf genaue und aktuelle Dokumentation benötigt. "
+    ) }}
+    {% include "pricing.html" %}
+{% endblock %}

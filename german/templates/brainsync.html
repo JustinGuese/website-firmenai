@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+{% from 'subprodmacro.html' import subproduct %}
+{% block content %}
+{{ subproduct("BrainSync", "Vereinfachen Sie Ihre Notizen und bleiben Sie organisiert mit KI-gestützter Dokumentation",
+"Rationalisierte Notizen", "Machen Sie sich Notizen und halten Sie sie organisiert, egal wie viele Projekte oder Themen Sie jonglieren.",
+"Anpassbare Langzeitdokumentation", "Erstellen Sie aus Ihren Notizen eine Langzeitdokumentation mit Zusammenfassungen und Links zu verwandten Projekten, um Zeit und Mühe zu sparen",
+"Projekttrennung und -organisation", "Trennen Sie Ihre Notizen nach Projekt oder Thema, um sich besser konzentrieren und organisieren zu können und Ihren Arbeitsablauf zu optimieren.",
+"KI-gestützter persönlicher Assistent", "Unser Chatbot merkt sich Details aus anderen Notizen und Projekten und liefert sofortige Antworten auf Ihre technischen Fragen, was ihn zu Ihrem persönlichen Assistenten macht.",
+"Revolutionieren Sie Ihre Notizen", "Revolutionieren Sie Ihre Notizen mit BrainSync - dem KI-gesteuerten Chatbot, der Ihre Dokumentation vereinfacht, Ihre Notizen nach Projekten oder Themen trennt und sich Details aus anderen Notizen und Projekten merkt. Mit anpassbarer Langform-Dokumentation, einem optimierten Notizprozess und einem KI-gesteuerten persönlichen Assistenten spart BrainSync Zeit und Mühe und hilft Ihnen, organisiert und produktiv zu bleiben. BrainSync eignet sich perfekt für Entwickler, die neue Funktionen implementieren möchten, für Teammitglieder, die Informationen über Unternehmenswerte und -strukturen suchen, und für alle, die ihre Notizen vereinfachen möchten."
+) }}
+{% include "pricing.html" %}
+{% endblock %}
