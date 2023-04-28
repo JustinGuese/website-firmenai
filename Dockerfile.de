@@ -1,0 +1,2 @@
+FROM nginxinc/nginx-unprivileged:alpine
+COPY --chown=nginx:nginx ./docs-de/ /usr/share/nginx/html

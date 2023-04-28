@@ -24,6 +24,8 @@ spec:
     # - firmenai.datafortress.cloud
     - firmenai.de
     - app.firmenai.de
+    - business-ai-tools.com
+    - app.business-ai-tools.com
     secretName: tls-secret
   rules:
   - host: firmenai.de # firmenai.datafortress.cloud
@@ -33,10 +35,30 @@ spec:
         pathType: Prefix
         backend:
           service:
-            name: firmenai-website-service
+            name: firmenai-website-german-service 
             port:
               number: 8080
   - host: app.firmenai.de # firmenai.datafortress.cloud
+    http:
+      paths:
+      - path: /
+        pathType: Prefix
+        backend:
+          service:
+            name: firmenai-backend
+            port:
+              number: 8000
+  - host: business-ai-tools.com # firmenai.datafortress.cloud
+    http:
+      paths:
+      - path: /
+        pathType: Prefix
+        backend:
+          service:
+            name: firmenai-website-service
+            port:
+              number: 8080
+  - host: app.business-ai-tools.com # firmenai.datafortress.cloud
     http:
       paths:
       - path: /
